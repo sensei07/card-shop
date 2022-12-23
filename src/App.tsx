@@ -1,11 +1,7 @@
-import React from 'react';
+import React, { FC } from 'react';
 
-function App() {
-  return (
-    <div>
-      Card shop
-    </div>
-  );
-}
+const App: FC = () => {
+  return <div>Card shop</div>;
+};
 
 export default App;
