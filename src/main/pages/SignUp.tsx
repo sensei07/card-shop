@@ -9,7 +9,7 @@ import Container from '@mui/material/Container';
 import { FC } from 'react';
 import { PATHS } from '../../constants/paths';
 
-const SignUp: FC = () => {
+export const SignUp: FC = () => {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>): void => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
@@ -98,5 +98,3 @@ const SignUp: FC = () => {
     </Container>
   );
 };
-
-export default SignUp;
