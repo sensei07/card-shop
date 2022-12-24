@@ -1,13 +1,13 @@
 import React, { FC } from 'react';
 import { Route, Routes } from 'react-router-dom';
 
-import { PRIVATE_ROUTES, ROUTES } from './constants/routes';
+import { ROUTES, ADMIN_ROUTES } from './constants/routes';
 import { NotFound } from './main/pages/NotFound';
 
 const role = 'ADMIN';
 
 const App: FC = () => {
-  const routes = role === 'ADMIN' ? PRIVATE_ROUTES : ROUTES;
+  const routes = role === 'ADMIN' ? [...ADMIN_ROUTES, ...ROUTES] : ROUTES;
 
   return (
     <Routes>
