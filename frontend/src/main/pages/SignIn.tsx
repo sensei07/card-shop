@@ -24,7 +24,7 @@ export const SignIn: FC = () => {
   };
 
   return (
-    <Grid container component="main" sx={{ height: '100vh' }}>
+    <Grid container component="main" sx={{ height: 'calc(100vh - 64px)' }}>
       <CssBaseline />
       <Grid
         item
